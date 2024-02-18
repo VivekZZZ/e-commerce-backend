@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    password: admin
+    url: jdbc:mysql://localhost:3306/shopit_db?createDatabaseIfNotExist=true
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: vivekkumar3198@gmail.com
+    password: qahwmghtwwusvvqt
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
